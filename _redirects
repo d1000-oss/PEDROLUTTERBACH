@@ -1,2 +1,17 @@
-/sample-page/ / 301!
-/sample-page / 301!
+# Redirecionamentos de paginas antigas do WordPress para secoes equivalentes
+# do novo site de pagina unica de Pedro Lutterbach.
+# Manter este arquivo na raiz do repositorio, ao lado de index.html.
+
+/sample-page/              /#aulas           301
+/biografia/                /#trajetoria      301
+/composicoes/              /#obra            301
+/contato/                  /#contato         301
+/dicografia/               /#discografia     301
+/discografia/              /#discografia     301
+/downloads/                /#downloads       301
+/fotos/                    /#fotos           301
+/loja/                     /#loja            301
+/midia/                    /#midia           301
+/download-de-partituras/   /#partituras      301
+/trilhas/                  /#trilhas         301
+/videos/                   /#videos          301
