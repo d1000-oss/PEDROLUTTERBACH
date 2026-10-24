@@ -1614,7 +1614,20 @@ class Component extends DCLogic {
     window.addEventListener('resize', this.onResize);
     window.addEventListener('scroll', this.onScroll, { passive:true });
     window.addEventListener('keydown', this.onKeyDown); window.addEventListener('keyup', this.onKeyUp); window.addEventListener('pointerup', this.onPtrUp);
-    requestAnimationFrame(() => { this.intro(); this.setupReveal(); this.onScroll(); this.startMarquee(); });
+    requestAnimationFrame(() => {
+      this.intro(); this.setupReveal(); this.onScroll(); this.startMarquee();
+      // A página é renderizada pelo React depois do carregamento inicial.
+      // Reposiciona o navegador quando a URL já chegou com #trajetoria, #aulas etc.
+      if (window.location.hash) {
+        requestAnimationFrame(() => {
+          let sectionId = '';
+          try { sectionId = decodeURIComponent(window.location.hash.slice(1)); }
+          catch (e) { sectionId = window.location.hash.slice(1); }
+          const destination = document.getElementById(sectionId);
+          if (destination) destination.scrollIntoView({ behavior: 'instant', block: 'start' });
+        });
+      }
+    });
   }
   componentWillUnmount() {
     window.removeEventListener('scroll', this.onScroll); window.removeEventListener('resize', this.onResize); window.removeEventListener('keydown', this.onKeyDown); window.removeEventListener('keyup', this.onKeyUp); window.removeEventListener('pointerup', this.onPtrUp);

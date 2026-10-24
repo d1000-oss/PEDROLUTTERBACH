@@ -15,3 +15,27 @@
 /download-de-partituras/   /#partituras      301
 /trilhas/                  /#trilhas         301
 /videos/                   /#videos          301
+
+# Links curtos para acessar diretamente as secoes do site
+/inicio                     /#inicio             301
+/inicio/                    /#inicio             301
+/aulas                      /#aulas              301
+/aulas/                     /#aulas              301
+/teclado                    /#teclado            301
+/teclado/                   /#teclado            301
+/trajetoria                 /#trajetoria         301
+/trajetoria/                /#trajetoria         301
+/obra                       /#obra               301
+/obra/                      /#obra               301
+/discografia                /#discografia        301
+/trilhas                    /#trilhas            301
+/loja                       /#loja               301
+/partituras                 /#partituras         301
+/partituras/                /#partituras         301
+/downloads                  /#downloads          301
+/palco                      /#palco              301
+/palco/                     /#palco              301
+/videos                     /#videos             301
+/fotos                      /#fotos              301
+/midia                      /#midia              301
+/contato                    /#contato            301
