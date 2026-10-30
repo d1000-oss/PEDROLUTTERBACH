@@ -1,0 +1,10 @@
+# Configuração mínima para o painel /admin. Diretório de publicação e comando
+# de build continuam os definidos no painel da Netlify (nada muda no site).
+
+[build]
+  # O branch de rascunho do CMS só guarda JSON: não precisa de deploy.
+  ignore = "test \"$BRANCH\" = \"cms-rascunho\""
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"

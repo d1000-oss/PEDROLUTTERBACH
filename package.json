@@ -1,0 +1,14 @@
+{
+  "name": "pedrolutterbach-site",
+  "private": true,
+  "description": "Site de Pedro Lutterbach + painel /admin (Netlify Functions, sem dependências)",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "test:e2e": "node tests/e2e/admin.e2e.mjs",
+    "dev": "node scripts/dev-server.mjs",
+    "senha": "node scripts/cms-senha.mjs"
+  }
+}

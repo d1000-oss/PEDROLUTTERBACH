@@ -1163,12 +1163,12 @@ a:hover { color: var(--color-accent-800); }
   </div>
   <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap:clamp(40px,6vw,96px); align-items:start;">
     <div style="position:{{ stickyPos }}; top:120px;">
-      <h2 style="margin:0 0 28px; font-family:var(--font-heading); font-weight:400; font-size:clamp(40px,5vw,66px); line-height:1.04; letter-spacing:-0.02em;">
+      <!-- cms:biografia --><h2 style="margin:0 0 28px; font-family:var(--font-heading); font-weight:400; font-size:clamp(40px,5vw,66px); line-height:1.04; letter-spacing:-0.02em;">
         <span style="display:block; overflow:hidden;"><span data-mask="0" style="display:block;">Música que sai dos</span></span>
         <span style="display:block; overflow:hidden; padding-bottom:.08em;"><span data-mask="120" style="display:block;"><em style="color:var(--color-accent-700);">limites da erudição.</em></span></span>
       </h2>
       <p data-reveal="160" style="margin:0 0 18px; font-size:17px; line-height:1.75; text-align:justify; hyphens:auto; color:color-mix(in srgb, var(--color-text) 80%, transparent);">Compositor, pianista e professor, Pedro Lutterbach graduou-se em piano pelo Conservatório Brasileiro de Música e estudou regência com Ricardo Rocha, fundador da Cia. Bachiana Brasileira. Sua obra transita entre diferentes períodos e busca um público variado.</p>
-      <p data-reveal="220" style="margin:0 0 30px; font-size:17px; line-height:1.75; text-align:justify; hyphens:auto; color:color-mix(in srgb, var(--color-text) 80%, transparent);">No canal <a href="https://www.youtube.com/c/Pedrolutterbachpianobr" target="_blank">Piano Brasileiro</a> difunde arranjos de Tom Jobim, Chico Buarque e Egberto Gismonti e interpreta Radamés Gnattali e Ernesto Nazareth.</p>
+      <p data-reveal="220" style="margin:0 0 30px; font-size:17px; line-height:1.75; text-align:justify; hyphens:auto; color:color-mix(in srgb, var(--color-text) 80%, transparent);">No canal <a href="https://www.youtube.com/c/Pedrolutterbachpianobr" target="_blank">Piano Brasileiro</a> difunde arranjos de Tom Jobim, Chico Buarque e Egberto Gismonti e interpreta Radamés Gnattali e Ernesto Nazareth.</p><!-- /cms:biografia -->
       <div data-img="260" class="plate" style="aspect-ratio:16/10; overflow:hidden;"><img src="/assets/ca8a1035-15e1-4628-bd66-37bc00fa4a52.jpg" alt="Foto de concerto" loading="lazy" draggable="false" style="display:block; width:100%; height:100%; object-fit:cover;"></div>
     </div>
     <div ref="{{ timelineRef }}" style="position:relative;">
@@ -1449,6 +1449,74 @@ a:hover { color: var(--color-accent-800); }
 </div>
 </x-dc>
 <script type="text/x-dc" data-dc-script="" data-props="{&quot;headingFont&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Bodoni Moda&quot;,&quot;Playfair Display&quot;,&quot;Libre Caslon&quot;],&quot;default&quot;:&quot;Bodoni Moda&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Tipografia&quot;},&quot;motion&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;nenhuma&quot;,&quot;sutil&quot;,&quot;expressiva&quot;],&quot;default&quot;:&quot;expressiva&quot;,&quot;tsType&quot;:&quot;'nenhuma'|'sutil'|'expressiva'&quot;,&quot;section&quot;:&quot;Animação&quot;},&quot;showKeyboard&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Teclado&quot;},&quot;keyLabels&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Teclado&quot;},&quot;whatsappFloat&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Contato&quot;}}">
+/* cms:dados */
+const CMS = {
+  "biografia": {
+    "timeline": [
+      {
+        "year": "1982",
+        "title": "Nasce em Belo Horizonte",
+        "body": "Hoje vive e leciona no Rio de Janeiro."
+      },
+      {
+        "year": "1994",
+        "title": "Primeiros estudos",
+        "body": "Começa a estudar piano aos 12 anos."
+      },
+      {
+        "year": "2006",
+        "title": "Graduação em piano",
+        "body": "Conservatório Brasileiro de Música, com Maria Tereza Soares e Maria Teresa Madeira. Estuda regência com Ricardo Rocha."
+      },
+      {
+        "year": "2009",
+        "title": "Prêmio em Portugal",
+        "body": "Quinteto nº 1 para sopros: 2º lugar no 4º Concurso Internacional de Composição de Póvoa de Varzim, gravado pela Camerata Senza Misura."
+      },
+      {
+        "year": "2011",
+        "title": "Estudos de composição",
+        "body": "Com Alexandre Schubert e, no ano seguinte, com Caio Senna na Uni-Rio."
+      },
+      {
+        "year": "2013",
+        "title": "Acordecor",
+        "body": "Primeiro disco de piano solo autoral. Jazz Ideas viria em 2015."
+      },
+      {
+        "year": "2016",
+        "title": "Tinta Fresca",
+        "body": "“O Coração do Curupira” entre as três vencedoras; estreia na Sala Minas Gerais. “Quarteto em Blocos” estreia na UFRJ."
+      },
+      {
+        "year": "2017",
+        "title": "Filarmônica de Minas",
+        "body": "O Curupira volta aos concertos de 5 e 6 de outubro, sob regência de Fabio Mechetti."
+      },
+      {
+        "year": "2018",
+        "title": "Solo Brasileiro",
+        "body": "Terceiro disco, dedicado aos ritmos brasileiros."
+      },
+      {
+        "year": "2020",
+        "title": "Prêmio Proart",
+        "body": "“O Boitatá” vence o Concurso Nacional de Composição Centenário UFRJ."
+      },
+      {
+        "year": "2023",
+        "title": "Folhas de Álbuns",
+        "body": "Quarto disco de piano solo."
+      },
+      {
+        "year": "2024",
+        "title": "Sala Cecília Meireles",
+        "body": "Estreia de “O Pássaro Mágico” no centenário da Sinfônica da UFRJ, regida por André Cardoso."
+      }
+    ]
+  }
+};
+/* /cms:dados */
 const COV = f => (window.COVERS && window.COVERS[f]) || ('uploads/' + f);
 const WA = 'https://wa.me/5521994263676';
 const CHAPTERS = [['aulas','Aulas'],['trajetoria','Trajetória'],['obra','Obra'],['loja','Loja'],['palco','Palco'],['contato','Contato']];
@@ -1849,20 +1917,7 @@ class Component extends DCLogic {
       lastNote: drill ? (s.solved ? noteName(s.target) : 'Que nota é esta?') : lastM !== undefined ? noteName(lastM) : '—',
       statusHint: drill ? (s.fb || 'Leia a nota na pauta e toque a tecla correspondente.') : lastM !== undefined ? cap(describe(lastM)) + '.' : 'Toque qualquer tecla — a nota aparece na pauta, no lugar em que é escrita.',
       loadLabel: s.load < 1 ? `Carregando piano de concerto… ${Math.round(s.load * 100)}%` : 'Piano de concerto (amostras reais) pronto',
-      timeline: [
-        ['1982','Nasce em Belo Horizonte','Hoje vive e leciona no Rio de Janeiro.'],
-        ['1994','Primeiros estudos','Começa a estudar piano aos 12 anos.'],
-        ['2006','Graduação em piano','Conservatório Brasileiro de Música, com Maria Tereza Soares e Maria Teresa Madeira. Estuda regência com Ricardo Rocha.'],
-        ['2009','Prêmio em Portugal','Quinteto nº 1 para sopros: 2º lugar no 4º Concurso Internacional de Composição de Póvoa de Varzim, gravado pela Camerata Senza Misura.'],
-        ['2011','Estudos de composição','Com Alexandre Schubert e, no ano seguinte, com Caio Senna na Uni-Rio.'],
-        ['2013','Acordecor','Primeiro disco de piano solo autoral. Jazz Ideas viria em 2015.'],
-        ['2016','Tinta Fresca','“O Coração do Curupira” entre as três vencedoras; estreia na Sala Minas Gerais. “Quarteto em Blocos” estreia na UFRJ.'],
-        ['2017','Filarmônica de Minas','O Curupira volta aos concertos de 5 e 6 de outubro, sob regência de Fabio Mechetti.'],
-        ['2018','Solo Brasileiro','Terceiro disco, dedicado aos ritmos brasileiros.'],
-        ['2020','Prêmio Proart','“O Boitatá” vence o Concurso Nacional de Composição Centenário UFRJ.'],
-        ['2023','Folhas de Álbuns','Quarto disco de piano solo.'],
-        ['2024','Sala Cecília Meireles','Estreia de “O Pássaro Mágico” no centenário da Sinfônica da UFRJ, regida por André Cardoso.'],
-      ].map(([year, title, body]) => ({ year, title, body })),
+      timeline: CMS.biografia.timeline,
       cats: CATS.map(([id, label]) => ({ label, color: s.cat === id ? 'var(--color-text)' : muted, bar: s.cat === id ? 'scaleX(1)' : 'scaleX(0)', select: () => this.setState({ cat:id }) })),
       works: WORKS[s.cat],
       albums: albums.map((a, i) => ({ ...a, delay:d(i), disc: s.hoverAlbum === i ? 'translateX(38%) rotate(220deg)' : 'translateX(8%) rotate(0deg)', enter: () => this.setState({ hoverAlbum:i }) })),
